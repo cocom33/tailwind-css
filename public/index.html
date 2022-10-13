@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tailwind</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="dark:bg-slate-800 dark:text-slate-200">
+	<div class="container">
+		<h1 class="text-4xl font-serif font-bold mt-3">hello wordl</h1>
+		<p class="font-inter mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur explicabo quis
+			perferendis iste aut sed, possimus esse amet sequi, unde voluptates minima id praesentium dolores minus hic omnis
+			doloribus.</p>
+		<blockquote class="mt-5 italic font-thin text-gray-500 bg-gray-200 p-4 font-mono">"Lorem
+			ipsum dolor, sit amet
+			consectetur
+			adipisicing elit. Et
+			adipisci unde
+			eum, similique quidem accusantium, amet distinctio inventore repellendus obcaecati vitae iure iusto saepe nam.
+			Vero nobis ad omnis, commodi ipsam perferendis eaque facere alias nesciunt quis temporibus ab amet!"</blockquote>
+		<p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis facere laudantium,
+			repellendus
+			reprehenderit vero, soluta harum eveniet velit ea veritatis hic natus voluptatum possimus totam illum. Dolore
+			eveniet vitae delectus itaque natus labore dolorem nostrum magnam! Mollitia facilis, ullam provident facere dolor
+			cum, sequi praesentium, placeat aut ex atque?</p>
+
+		<div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover bg-center transition duration-300 bg-no-repeat rounded-xl shadow-xl shadow-slate-300/50 overflow-hidden flex" style="background-image: url('img/1.png');">
+			<div class="w-[200px] h-[200px] m-auto bg-rose-300/30 rounded-full backdrop-blur-md"></div>
+		</div>
+		
+		<hr class="my-20">
+		
+		<button class="my-10 px-5 py-2 rounded-full text-white font-semibold bg-rose-500 block mx-auto hover:bg-rose-600 focus:ring focus:ring-rose-200 active:rose-700">Rose Button</button>
+		
+		<div class="my-10 flex justify-center">
+			<span class="text-sm text-slate-500 mr-2">Light</span>
+			<input type="checkbox" name="toggle" id="toggle" class="hidden">
+			<label for="toggle">
+				<div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer background-label">
+					<div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+				</div>
+			</label>
+			<span class="text-sm text-slate-500 ml-2">Dark</span>
+		</div>
+		
+		<div class="max-w-lg my-10 border rounded-xl mx-auto p-5 shadow-md hover:bg-rose-500 transition duration-300 group">
+			<h4 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white transition duration-300 select-none">My cart</h4>
+			<p class="text-slate-600 group-hover:text-white selection:bg-white selection:text-slate-800 transition duration-300 first-line:uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio alias ex dignissimos quisquam aspernatur corporis qui quia in dolore, nemo culpa quas! Quod, laborum aspernatur aperiam iste nostrum quibusdam illo.
+			</p>
+		</div>
+		
+		<div class="max-w-lg my-10 border rounded-xl mx-auto p-5 shadow-md">
+			<form action="">
+				<label for="email" class="block">
+					<span class="block font-semibold mb-1 text-slate-600 after:content-['*'] after:text-rose-500 after:ml-0.5">Email</span>
+					<input type="email" name="email" id="email" placeholder="email@gmail.com" class="w-full rounded shadow-sm text-sm border px-3 py-2 block placeholder:text-slate-400 focus:outline-none focus:ring focus:ring-blue-200 focus:border-blue-500 invalid:focus:border-rose-500 invalid:focus:ring-rose-200 peer">
+					<p class="text-sm mt-2 text-pink-500 invisible peer-invalid:visible">email salah</p>
+				</label>
+			</form>
+		</div>
+		
+		<hr class="my-10">
+		
+		<div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:totate-45 hover:bg-rose-500 transition origin-top-left"></div>
+		
+		<div class="w-40 h-40 my-20 mx-auto group">
+			<div class="w-full h-full bg-sky-500 rounded-lg shadow-md group-hover:-rotate-180 origin-top-right transition duration-300"></div>
+		</div>
+		
+		<div class="flex my-20">
+			<div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg animate-spin-slow"></div>
+		</div>
+		
+		<div class="my-20 border rounded-lg shadow-md p-10">
+			<div class="w-10 h-10 bg-pink-200 rounded-full flex fixed bottom-5 right-5">
+				<a href="#" class="text-lg m-auto text-red-900">X</a>
+			</div>
+			<img src="img/2.jpg" alt="" width="150" class="float-left mr-2">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati ipsum reprehenderit ab alias, odit facilis consequatur nisi aut pariatur fuga autem illo culpa expedita ipsa provident sequi dignissimos non necessitatibus corporis! Nulla, expedita assumenda eius deleniti sed, dolorum commodi odio neque ullam consectetur et, repellat placeat in facere dolore eos?</p>
+		</div>
+		
+		<div class="my-20 border rounded-lg shadow-md p-10 columns-2">
+			<img src="img/2.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+			<img src="img/2.jpg" alt="">
+		</div>
+		
+		<hr class="my-20 border-t-4">
+	</div>
+	<div class="container px-6 max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full lg:p-0 flex">
+		<div class="lg:flex-1 lg:p-12">
+			<h3 class="text-4xl sm:font-5xl md:font-6xl font-bold text-slate-800">Aing</h3>
+			<img src="img/1.png" alt="" class="mt-4 sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-top rounded-xl shadow-xl lg:hidden">
+			<h2 class="mt-6 sm:mt-8 text-2xl sm:text-3xl font-semibold text-slate-800">Mari belajar</h2>
+			<p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores assumenda omnis ab laboriosam, minus similique recusandae sit, voluptatem impedit, aperiam vel. Dignissimos, ducimus. Porro exercitationem sequi, error, reprehenderit officia saepe.
+			</p>
+			<div class="mt-4 sm:mt-6">
+				<a href="" class="inline-block px-5 py-3 bg-red-500 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base ">Subrek</a>
+			</div>
+		</div>
+		<div class="hidden lg:flex lg:w-1/2">
+			<img src="img/2.jpg" alt="" class="object-cover rounded-l-full">
+		</div>
+	</div>
+	
+	<h2 class="mb-10 mt-20 text-center font-bold text-2xl text-slate-700">My Gallery</h2>
+	
+	<div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-center">
+		<div class="rounded shadow-lg overflow-hidden mb-10 sm:mb-0 sm:w-64 md:w-80">
+			<img src="img/2.jpg" alt="" class="w-full">
+			<div class="px-6 py-4">
+				<div class="font-bold text-xl mb-2 text-slate-700">Image Title</div>
+				<p class="text-sm text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, laboriosam!</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="mt-20 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+		<h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 flex">
+			<span class="self-center">Selamat data</span>
+		</h2>
+		<div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 flex">
+			<span class="self-end">teststsets</span>
+		</div>
+		
+		<div class="grid-card group">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group md:col-start-3">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group md:col-start-2">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group md:col-start-4">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group md:col-start-3">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+		<div class="grid-card group md:col-start-3">
+			<div class="grid-card-img" style="background-image: url('img/1.png');"></div>
+		</div>
+	</div>
+	
+	<h1>apa sn</h1>
+	
+	<div class="mt-96"></div>
+	
+	<script>
+		const checkbox = document.querySelector('#toggle');
+		const html = document.querySelector('html');
+		
+		checkbox.addEventListener('click', function(){
+			checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+		})
+	</script>
+</body>
+
+</html>
